@@ -1,0 +1,135 @@
+/* Navbar */
+.custom-navbar {
+   background: linear-gradient(135deg, #1e3c72, #2a5298);
+   padding: 15px;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.navbar-brand {
+   display: flex;
+   align-items: center;
+}
+.profile-photo {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   margin-right: 10px;
+   border: 2px solid white;
+}
+.brand-name {
+   font-size: 1.4rem;
+   font-weight: bold;
+}
+/* Hero Section */
+.hero-section {
+   padding: 80px 0;
+   background: linear-gradient(135deg, #1e3c72, #2a5298);
+   color: white;
+   text-align: center;
+   border-radius: 10px;
+}
+.hero-profile {
+   width: 250px;
+   height: 250px;
+   border-radius: 50%;
+   border: 5px solid white;
+   object-fit: cover;
+   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+/* Skills Section */
+.skill-icon {
+   width: 60px;
+   height: 60px;
+   margin-bottom: 10px;
+}
+/* Projects */
+.project-card img {
+   width: 100%;
+   border-radius: 10px;
+}
+/* Contact */
+.contact-section {
+   padding: 50px;
+   background: linear-gradient(135deg, #ff416c, #ff4b2b);
+   color: white;
+   border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+   background: linear-gradient(135deg, #1e3c72, #2a5298);
+   color: white;
+   padding: 20px 0;
+   margin-top: 50px;
+}
+.footer p {
+   margin: 0;
+   font-size: 1rem;
+}
+.social-icons {
+   margin-top: 10px;
+}
+.social-icons a {
+   margin: 0 10px;
+   display: inline-block;
+}
+.social-icons img {
+   width: 30px;
+   height: 30px;
+   transition: transform 0.3s ease;
+}
+.social-icons img:hover {
+   transform: scale(1.2);
+}
+
+/* About Me Section */
+.about-me {
+   padding: 50px 0;
+}
+.profile-img {
+   width: 250px;
+   height: 250px;
+   border-radius: 50%;
+   object-fit: cover;
+   border: 5px solid #ff4b2b;
+   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+/* About Text */
+.about-text {
+   font-size: 1.2rem;
+   line-height: 1.6;
+   color: #333;
+}
+.highlight {
+   color: #ff4b2b;
+   font-weight: bold;
+}
+/* Skills Section */
+/* .skills-section {
+   background: linear-gradient(135deg, #1e3c72, #2a5298);
+   padding: 50px;
+   border-radius: 10px;
+   color: white;
+}
+.skill-icon {
+   width: 60px;
+   height: 60px;
+   margin-bottom: 10px;
+} */
+/* Fun Facts */
+.fun-facts {
+   background: #f8f9fa;
+   padding: 30px;
+   border-radius: 10px;
+   margin-top: 30px;
+}
+.fun-facts p {
+   font-size: 1.1rem;
+   color: #555;
+}
+/* Contact Section */
+.contact-section {
+   padding: 50px;
+   background: linear-gradient(135deg, #ff416c, #ff4b2b);
+   color: white;
+   border-radius: 10px;
+}

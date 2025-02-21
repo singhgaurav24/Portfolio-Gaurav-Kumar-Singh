@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% block title %}Home - SRE & DevOps Portfolio{% endblock %}
+{% block content %}
+<!-- Hero Section -->
+<div class="hero-section">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6">
+<h1>Hi, I'm <span class="highlight">Gaurav Singh</span> 👋</h1>
+<h6 class="tagline">Site Reliability Engineer | DevOps | Observability Enthusiast</h6>
+<p>
+    I'm a <strong>Site Reliability Engineer (SRE) & DevOps Specialist</strong> with 4 years of experience, I specialize in designing highly available, resilient, and secure infrastructure for modern cloud-native applications. 
+    <!-- As a dedicated DevOps Engineer at VOIS (Vodafone),  -->
+    I specialize in ensuring the reliability, scalability, and efficiency of infrastructure and application environments. With a strong background in cloud platforms like AWS and Azure DevOps, 
+    I focus on building and maintaining resilient systems that support high-availability and seamless user experiences.
+</p>
+<a href="{{ url_for('projects') }}" class="btn btn-primary btn-lg mt-3">View My Work</a>
+<a href="{{ url_for('about') }}" class="btn btn-primary btn-lg mt-3">More about me</a>
+</div>
+<div class="col-lg-6 text-center">
+<img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile Photo" class="hero-profile">
+</div>
+</div>
+</div>
+</div>
+<!-- Skills Section -->
+<div class="skills-section container text-center mt-5">
+<h2>My Skillset</h2>
+<div class="row mt-4">
+<div class="col-md-4">
+<img src="{{ url_for('static', filename='images/cloud.png') }}" alt="Cloud" class="skill-icon">
+<h4>Cloud & Infrastructure</h4>
+<p>AWS, Azure Devops, Kubernetes, Terraform</p>
+</div>
+<div class="col-md-4">
+<img src="{{ url_for('static', filename='images/monitoring.png') }}" alt="Observability" class="skill-icon">
+<h4>Observability & Monitoring</h4>
+<p>Datadog, Prometheus, Grafana, Splunk CloudWatch</p>
+</div>
+<div class="col-md-4">
+<img src="{{ url_for('static', filename='images/automation.png') }}" alt="Automation" class="skill-icon">
+<h4>CI/CD & Automation</h4>
+<p> Python, Azure Devops, Jenkins, GitHub Actions</p>
+</div>
+</div>
+</div>
+<!-- Featured Projects -->
+<div class="projects-section container text-center mt-5">
+<h2>Featured Projects</h2>
+<p>Here are some of my recent SRE & DevOps projects:</p>
+<div class="row mt-4">
+<div class="col-md-6">
+<div class="project-card">
+<img src="{{ url_for('static', filename='images/project1.jpg') }}" alt="Project 1">
+<h4>Automated Cloud Monitoring</h4>
+<p>Implemented **Datadog + Prometheus** for real-time monitoring.</p>
+</div>
+</div>
+<div class="col-md-6">
+<div class="project-card">
+<img src="{{ url_for('static', filename='images/project2.jpg') }}" alt="Project 2">
+<h4>CI/CD for Kubernetes</h4>
+<p>Built a **GitOps pipeline using ArgoCD, Terraform, and Helm**.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Contact Section -->
+<div class="contact-section text-center mt-5">
+<h2>Let's Collaborate</h2>
+<p>Need help with SRE, DevOps, or Observability? Let’s build something scalable!</p>
+<a href="{{ url_for('contact') }}" class="btn btn-success btn-lg">Get in Touch</a>
+</div>
+{% endblock %}

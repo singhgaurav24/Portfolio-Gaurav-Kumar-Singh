@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block title %}About Me - SRE & DevOps Engineer{% endblock %}
+{% block content %}
+<!-- About Me Section -->
+<div class="about-me container mt-5">
+<div class="row align-items-center">
+<div class="col-lg-5 text-center">
+<img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile" class="profile-img">
+</div>
+<div class="col-lg-7">
+<h2>About Me</h2>
+<p class="about-text">
+               I'm a <span class="highlight">Site Reliability Engineer (SRE)</span> & <span class="highlight">DevOps Enthusiast</span> passionate about
+               designing **scalable, automated, and highly reliable cloud infrastructure**.
+</p>
+<p class="about-text">
+               With expertise in **Kubernetes, Terraform, AWS, and Observability tools**, I work on ensuring **system uptime, monitoring, and automation**.
+               My focus is on **building resilient architectures and streamlining CI/CD pipelines**.
+</p>
+<p class="about-text">
+               Apart from my work, I love **exploring new DevOps tools**, contributing to **open-source projects**, and sharing knowledge in **tech communities**.
+</p>
+<a href="{{ url_for('projects') }}" class="btn btn-primary mt-3">View My Work</a>
+</div>
+</div>
+</div>
+<!-- Skills Section -->
+<div class="skills-section container text-center mt-5">
+<h2>Technical Skills</h2>
+<div class="row mt-4">
+<div class="col-md-4">
+<img src="{{ url_for('static', filename='images/cloud.png') }}" alt="Cloud" class="skill-icon">
+<h4>Cloud & Infrastructure</h4>
+<p>AWS, GCP, Kubernetes, Terraform</p>
+</div>
+<div class="col-md-4">
+<img src="{{ url_for('static', filename='images/monitoring.png') }}" alt="Observability" class="skill-icon">
+<h4>Observability & Monitoring</h4>
+<p>Datadog, Prometheus, Grafana</p>
+</div>
+<div class="col-md-4">
+<img src="{{ url_for('static', filename='images/automation.png') }}" alt="Automation" class="skill-icon">
+<h4>CI/CD & Automation</h4>
+<p>Jenkins, GitHub Actions, Ansible</p>
+</div>
+</div>
+</div>
+<!-- Fun Facts Section -->
+<div class="fun-facts container text-center mt-5">
+<h2>Fun Facts About Me</h2>
+<p>🔥 I have automated 50+ infrastructure projects in production.</p>
+<p>📖 I love writing about SRE & DevOps best practices.</p>
+<p>🚀 Always exploring cutting-edge DevOps tools to optimize workflows.</p>
+</div>
+<!-- Contact Section -->
+<div class="contact-section text-center mt-5">
+<h2>Let's Connect</h2>
+<p>If you need help with SRE, DevOps, or Observability, feel free to reach out!</p>
+<a href="{{ url_for('contact') }}" class="btn btn-success btn-lg">Get in Touch</a>
+</div>
+{% endblock %}
