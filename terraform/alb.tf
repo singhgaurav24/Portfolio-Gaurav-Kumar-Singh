@@ -5,6 +5,7 @@ resource "aws_lb" "app_alb" {
   subnets            = [aws_subnet.subnet_a.id, aws_subnet.subnet_b.id]
   security_groups    = [aws_security_group.alb_sg.id]
 }
+
 resource "aws_lb_target_group" "tg" {
   name     = "${var.app_name}-tg"
   port     = var.container_port
@@ -48,4 +49,3 @@ resource "aws_security_group" "alb_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
- 
